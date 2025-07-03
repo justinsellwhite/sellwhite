@@ -1,0 +1,131 @@
+.navraj {
+    /*        max-width: 100%;
+            padding: 0 2em;*/
+    background-color: #e94242;
+    border-radius: 0.3rem;
+    box-shadow: 10px 5px 2px #5e5e5e;
+    line-height: 4em;
+    font-weight: bold;
+    /*        white-space: nowrap;
+            overflow: auto;*/
+}
+
+.navitems {
+    /*margin: 8px;*/
+    /*        max-width: 100%;*/
+    padding: 1em 1em;
+    font-size: 18px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid;
+    border-radius: 1.4rem;
+    /*line-height: 4em*/;
+    font-weight: bold;
+    /*        white-space: nowrap;*/
+    /*overflow: auto;
+            list-style: none;*/
+    /*display: inline-grid;
+            grid-auto-flow: column;
+            grid-gap: 1em;*/
+    transition: color 256ms;
+    animation: rainbow_animation 12s ease infinite;
+    /*        -webkit-background-clip: border;
+            background-clip: border;*/
+    /*        background-size: 390% 100%;*/
+}
+
+    .navitems:hover {
+        color: #e7e7e7;
+    }
+
+.navitem.active .item-link {
+    color: #3ddae6;
+}
+
+.item-link {
+    color: #2c2c2c;
+    text-decoration: none;
+    transition: color 256ms;
+}
+
+    .item-link:hover {
+        color: transparent;
+        text-decoration: dotted;
+        animation: rainbow_animation 8s ease infinite;
+        background: linear-gradient(to right, #72ffad, #0099ff, #00ff00, #ff3399, #6666ff, #72ffad, #0099ff, #00ff00, #ff3399, #6666ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        /*            background-size: 400% 100%;*/
+    }
+
+
+/*.navindic {
+    --index: 1;
+    height: 3px;
+    background-color: transparent;
+    border-radius: 3px 3px 0 0;
+    grid-column: var(--index)/calc(var(--index) + 1) !important;
+    grid-row: 1/1;
+    align-self: end;
+}*/
+
+body {
+    /*min-height: 90vh;*/
+    font-family: "Shantell Sans";
+    background: #f56060;
+    /*place-items: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;*/
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+        body {
+            background-image: url(../luffy.gif);
+            background-size: cover;
+            background-repeat: repeat-y;
+            background-attachment: fixed;
+        }
+
+    .heading {
+            background: linear-gradient(to right, #72ffad, #0099ff, #00ff00, #ff3399, #6666ff, #72ffad, #0099ff, #00ff00, #ff3399, #6666ff);
+/*            justify-content: center;
+            align-items: center;*/
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow_animation 8s ease infinite;
+/*            background-size: 400% 100%;
+            padding: 0 2em;
+            margin: 3;*/
+            border: 2px solid;
+            font-size: 50px
+        }
+
+/*    .column {
+            width: 100%;
+        }*/
+
+/*    @media (min-width: 600px) {
+            .column {
+                width: 50%;
+            }
+        }*/
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+h1 {
+    text-align: center;
+}
