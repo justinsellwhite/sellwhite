@@ -1,0 +1,53 @@
+body {
+    background-image: url(../assets/hopeneverdies.gif);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    font-family: "Shantell Sans";
+}
+
+.card {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid;
+    border-radius: 1.4rem;
+    line-height: 2em;
+    font-weight: bold;
+    transition: color 256ms;
+}
+
+.card-header {
+    border: none;
+    color: transparent;
+    animation: rainbow_animation 8s ease infinite;
+    background: linear-gradient(to right, #ccdeff, #ccdeff, #ccdeff, #ccdeff, #ccdeff, #f4ffc3, #fffc5c, #f8ff9b, #ccdeff, #ccdeff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 400% 100%;
+    font-size: 18px;
+}
+
+.icon-spacer-left {
+    margin-left: 0.5rem;
+}
+
+.card-body {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}

@@ -1,125 +1,61 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='https://fonts.googleapis.com/css?family=Shantell Sans' rel='stylesheet'>
-<script src="https://kit.fontawesome.com/3e84a5c669.js" crossorigin="anonymous"></script>
-<style>
-
-body {
-    background-image: url(hopeneverdies.gif);
-    background-size: cover;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    height: 100%;
-    font-family: "Shantell Sans";
-}
-.section1 {
-    font-size: 18px;
-    margin: 4;
-    max-width: 30%;
-    padding: 0 4em;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    border: 2px solid;
-    border-radius: 1.4rem;
-    line-height: 2em;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: auto;
-    list-style: none;
-    grid-auto-flow: column;
-    grid-gap: 1em;
-    margin-bottom: 25px;
-    transition: color 256ms;
-    text-align: center;
-}
-.section2 {
-    font-size: 18px;
-    margin: 8;
-    max-width: 30%;
-    padding: 0 4em;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    border: 2px solid;
-    border-radius: 1.4rem;
-    line-height: 2em;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: auto;
-    list-style: none;
-    grid-auto-flow: column;
-    grid-gap: 1em;
-    margin-bottom: 25px;
-    transition: color 256ms;
-    text-align: center;
-}
-.section3 {
-    font-size: 18px;
-    margin: 4;
-    max-width: 30%;
-    padding: 0 4em;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    border: 2px solid;
-    border-radius: 1.4rem;
-    line-height: 2em;
-    font-weight: bold;
-    white-space: nowrap;
-    grid-auto-flow: column;
-    grid-gap: 1em;
-    margin-bottom: 10px;
-    transition: color 256ms;
-    text-align: center;
-    justify-content: center;
-}
-h1 {
-    color: transparent;
-    animation: rainbow_animation 8s ease infinite;
-    background: linear-gradient(to right, #ccdeff, #ccdeff, #ccdeff, #ccdeff, #ccdeff, #f4ffc3, #fffc5c , #f8ff9b, #ccdeff, #ccdeff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-size: 400% 100%;
-}
-@keyframes rainbow_animation{
-    0%,100% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 100% 0;
-    }
-}
-</style>
-
-<body>
-    <section class="section1">
-<h1>
-    Email <i class="fa-regular fa-envelope"></i>
-</h1>
-<p>
-    Email me about beats, collabs, & coding
-</p>
-<p>
-    juhztn@gmail.com
-</p>
-</section>
-<section class="section2">
-    <h1> 
-        Discord <i class="fa-brands fa-discord"></i>
-    </h1>
-    <p>
-        juuustin#0419
-    </p>
-</section>
-<section class="section3">
-    <h1> 
-        random socials
-    </h1>
-    <p>
-        xXyungosugod420Xx <i class="fa-brands fa-steam"></i>
-</p>
-    <p>
-        juhzten (chess.com i will smoke u)
-    </p>
-</section>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    <title>Contact</title>
+    <link href='https://fonts.googleapis.com/css?family=Shantell Sans' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3e84a5c669.js" crossorigin="anonymous"></script>
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <link href="./styles/contactsstyles.css" rel="stylesheet">
+</head>
+<html class="h-100">
+<body class="h-100 w-100">
+    <div class="container d-flex flex-column h-100 w-100 justify-content-center align-items-center">
+        <div class="row w-100 mb-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-center">
+                        Email 
+                        <div class="icon-container icon-spacer-left">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-center">
+                        <a href="mailto:juhztn@gmail.com">juhztn@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 mb-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-center">
+                        Discord
+                        <div class="icon-container icon-spacer-left">
+                            <i class="fa-brands fa-discord"></i>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-center">
+                        <a href="#">juuustin#0419</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-center">
+                        Random Socials
+                    </div>
+                    <div class="card-body d-flex justify-content-center">
+                        <ul style="list-style: none;">
+                            <li>xXyungosugod420Xx <i class="fa-brands fa-steam"></i></li>
+                            <li>juhzten (<a target="_blank" href="https://www.chess.com/">chess.com</a> i will smoke u) </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
