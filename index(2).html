@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<link href='https://fonts.googleapis.com/css?family=Shantell Sans' rel='stylesheet'>
+<meta name="viewport" content="width=device-width,initial-scale=3"/>
+<script src="https://kit.fontawesome.com/3e84a5c669.js" crossorigin="anonymous"></script>
+<style>
+    .navraj {
+    max-width: 100%;
+    padding: 0 2em;
+    background-color: #e94242
+    border-radius 0.3rem;
+    box-shadow: 10px 5px 2px #5e5e5e
+    line-height 4em;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: auto;
+}
+.navitems {
+    margin: 8;
+    max-width: 100%;
+    padding: 0 2em;
+    font-size: 18px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid;
+    border-radius: 1.4rem;
+    line-height: 4em;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: auto;
+    list-style: none;
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-gap: 1em;
+    transition: color 256ms;
+    animation: rainbow_animation 12s ease infinite;
+    -webkit-background-clip: border;
+    background-clip: border;
+    background-size: 390% 100%;
+
+}
+.navitems > *:nth-child(1) {
+    grid-column: 1 / 2;
+}
+.navitems > *:nth-child(2) {
+    grid-column: 2 / 3;
+}
+.navitems > *:nth-child(3) {
+    grid-column: 3 / 4;
+}
+.navitems > *:nth-child(4) {
+    grid-column: 4 / 5;
+}
+.navitems > *:nth-child(5) {
+    grid-column: 5 / 6;
+}
+.navitems > *:nth-child(6) {
+    grid-column: 6 / 7;
+}
+.navitems > *:nth-child(7) {
+    grid-column: 7 / 8;
+}
+
+.navitems:hover {
+    color: #e7e7e7;
+}
+    
+.navitem {
+    padding: 0 0.75em;
+    display: inline;
+    grid-row: 1/1;
+}
+.navitem.active .item-link {
+    color: #3ddae6;
+}
+
+.item-link {
+    color: #2c2c2c;
+    text-decoration: none;
+    transition: color 256ms;
+}
+.item-link:hover {
+    color: transparent;
+    text-decoration: dotted;
+    animation: rainbow_animation 8s ease infinite;
+    background: linear-gradient(to right, #72ffad, #0099ff, #00ff00, #ff3399, #6666ff, #72ffad, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 400% 100%;
+}
+.seperator {
+    -width: 1px;
+    height: 60%;
+    margin: 10% 0;
+    background-color: rgb(30, 41, 61);
+    align-self: center;
+    border-radius: 1rem;
+}
+.navindic {
+    --index: 1;
+    height: 3px;
+    background-color: transparent;
+    border-radius: 3px 3px 0 0;
+    grid-column: var(--index)/calc(var(--index) + 1) !important;
+    grid-row: 1/1;
+    align-self: end;
+}
+
+body {
+    min-height: 90vh;
+    font-family: "Shantell Sans";
+    background: #f56060;
+    place-items: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body {
+        background-image: url(wall.gif);
+        background-size: cover;
+        background-repeat: repeat-y;
+        background-attachment: fixed;
+        height: 120%;
+        width: 97%;
+    }
+.heading {
+    background: linear-gradient(to right, #72ffad, #0099ff, #00ff00, #ff3399, #6666ff, #72ffad, #0099ff , #00ff00, #ff3399, #6666ff);
+    justify-content: center;
+    align-items: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 8s ease infinite;
+    background-size: 400% 100%;
+    padding: 0 2em;
+    margin: 3;
+    border: 2px solid;
+    font-size: 50px
+    }
+.column {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
+@keyframes rainbow_animation{
+    0%,100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+}
+h1 {
+    text-align: center;
+}
+button {
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    text-align: center;
+}
+
+</style>
+<title> sellwhite.co</title>
+<body>
+    <section>
+        <h1 class="heading">
+        sellwhite.co
+        </h1>
+        <h2 class="footnote">
+            coded by justin and jaret
+        </h2>
+    <button>button</button>
+
+    <nav class="navraj">
+        <ul class="navitems">
+            <li class="navitem"><a class="item-link" onclick="select(this)" href="https://www.instagram.com/justinsellwhite/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <div class="seperator"></div>
+            <li class="navitem"><a class="item-link" onclick="select(this)" href="music.html"><i class="fa-solid fa-music"></i> Music</a></li>
+            <div class="seperator"></div>
+            <li class="navitem"><a class="item-link" onclick="randomlinks();" href="#"><i class="fa-solid fa-dice"></i> Away</a></li>
+            <div class="seperator"></div>
+            <li class="navitem"><a class="item-link" onclick="select(this)" href="contacts.html"><i class="fa-regular fa-address-book"></i> About/Support</a></li>
+            <div class="navindic"></div>
+        </ul>
+    </nav>
+    <script type="text/javascript">
+        function randomlinks(){
+            var myrandom=Math.round(Math.random()*63)
+            var links=new Array()
+            links[0]="https://krackgrapes.com/"
+            links[1]="https://www.twitch.tv/xohray"
+            links[2]="https://www.youtube.com/watch?v=sQtwq9dA09c"
+            links[3]="https://www.youtube.com/watch?v=9O9oEY4Xmh8"
+            links[4]="https://www.youtube.com/watch?v=e5Q5JCLwuaU"
+            links[5]="https://www.youtube.com/watch?v=pF0NkryYj6o"
+            links[6]="https://www.youtube.com/watch?v=KzRGqoSKd3E"
+            links[7]="https://www.youtube.com/watch?v=gZdqr97UgSY"
+            links[8]="https://www.youtube.com/watch?v=uIOAPd5hTtc"
+            links[9]="https://www.youtube.com/watch?v=Y6X2vMvHpHo"
+            links[10]="https://www.youtube.com/watch?v=VtGSX4mr7EQ"
+            links[11]="https://www.youtube.com/watch?v=Udi5-qWw4Dw"
+            links[12]="https://open.spotify.com/album/7sXzD1qf1zfXF0Um7esNSc?si=R2CXOqMIQGCe-V_Vk2sv8A"
+            links[13]="https://www.youtube.com/watch?v=3NT25TH5kQQ"
+            links[14]="https://www.youtube.com/watch?v=-fCtvurGDD8"
+            links[15]="https://www.youtube.com/watch?v=xz1hfe6Fo4Y"
+            links[16]="https://www.youtube.com/watch?v=mWm3QIp2hHw"
+            links[17]="https://www.youtube.com/watch?v=4XgKYaDsFw8"
+            links[18]="https://www.youtube.com/watch?v=WqH4Bpe7Mjk"
+            links[19]="https://www.youtube.com/watch?v=FvIvkk8evVY"
+            links[20]="https://www.youtube.com/watch?v=-gFVA31UVAc"
+            links[21]="https://www.youtube.com/watch?v=-IoqzQbqitc"
+            links[22]="https://www.youtube.com/watch?v=jI4ySa7ypfQ"
+            links[23]="https://www.youtube.com/watch?v=dB5EVXew7QY"
+            links[24]="https://www.youtube.com/watch?v=FH5XR68Bbsg"
+            links[25]="https://www.youtube.com/watch?v=fSoT13msPe4"
+            links[26]="https://www.youtube.com/watch?v=U4grXQoJEPM"
+            links[27]="https://en.wikipedia.org/wiki/Synchronicity"
+            links[28]="https://www.youtube.com/watch?v=1CZ2f2g0OxY"
+            links[29]="https://en.wikipedia.org/wiki/Eternal_return"
+            links[30]="https://en.wikipedia.org/wiki/Tashirojima"
+            links[31]="https://en.wikipedia.org/wiki/Israeli%E2%80%93Palestinian_conflict"
+            links[32]="https://en.wikipedia.org/wiki/Tashirojima"
+            links[33]="https://en.wikipedia.org/wiki/Tashirojima"
+            links[34]="https://open.spotify.com/album/7sXzD1qf1zfXF0Um7esNSc?si=R2CXOqMIQGCe-V_Vk2sv8A"
+            links[35]="https://www.twitch.tv/xohray"
+            links[36]="https://krackgrapes.com/"
+            links[37]="https://en.wikipedia.org/wiki/Bob_Lazar"
+            links[38]="https://en.wikipedia.org/wiki/Pig_Beach"
+            links[39]="https://en.wikipedia.org/wiki/Great_Moon_Hoax"
+            links[40]="https://en.wikipedia.org/wiki/London_Beer_Flood"
+            links[41]="https://en.wikipedia.org/wiki/Tank_Man"
+            links[42]="https://en.wikipedia.org/wiki/Tank_Man"
+            links[43]="https://en.wikipedia.org/wiki/Impossible_color"
+            links[44]="https://en.wikipedia.org/wiki/As_a_dog_returns_to_his_vomit,_so_a_fool_repeats_his_folly"
+            links[45]="https://en.wikipedia.org/wiki/Flying_Spaghetti_Monster"
+            links[46]="https://en.wikipedia.org/wiki/Islamic_toilet_etiquette" 
+            links[47]="https://en.wikipedia.org/wiki/Jerusalem_syndrome"
+            links[48]="https://en.wikipedia.org/wiki/Miracle_of_the_Sun"
+            links[49]="https://en.wikipedia.org/wiki/Wicked_Bible"
+            links[50]="https://en.wikipedia.org/wiki/MKUltra"
+            links[51]="https://en.wikipedia.org/wiki/Reformation"
+            links[52]="https://en.wikipedia.org/wiki/Mansa_Musa"
+            links[53]="https://www.youtube.com/watch?v=JnsUkjlYLjs"
+            links[54]="https://www.youtube.com/watch?v=0MpuJrdYU3A"
+            links[55]="https://en.wikipedia.org/wiki/Ninety-five_Theses"
+            links[56]="https://en.wikipedia.org/wiki/Baptism_of_Jesus"
+            links[57]="https://en.wikipedia.org/wiki/Chinese_room"
+            links[58]="https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat"
+            links[59]="https://en.wikipedia.org/wiki/Golden_ratio" 
+            links[60]="https://www.youtube.com/watch?v=aYrOjbdxRkU"
+            links[61]="https://www.youtube.com/watch?v=aYrOjbdxRkU"
+            links[62]="https://www.youtube.com/watch?v=EJbnulJMVnM"
+            links[63]="https://www.youtube.com/watch?v=u8HXIxHr3xg"
+            window.location=links[myrandom]
+        }
+    </script>
+</section>
+
+<script>
+    function select (link) {
+        const item = link.parentNode
+        const nav = item.parentNode
+        const index = Array.prototype.indexOf.call(nav.children, item)
+        const items = nav.querySelectorAll('.navitem')
+        const indicator = nav.querySelector('.navindic')
+
+        indicator.style.setProperty('--index', index + 1)
+        items.foreach(item => item.classlist.remove('active'))
+        item.classlist.add('active')
+    }
+    const items = document.querySelectorAll('.item-link')
+    const randomItem = items[Math.round(Math.random() * (items.length - 1))]
+
+    select(randomItem)
+</script>
+<script>
+    var sites = [
+        'http://www.google.com',
+        'http://www.stackoverflow.com',
+        'http://www.example.com',
+        'http://www.youtube.com'
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
