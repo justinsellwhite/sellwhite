@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link href='https://fonts.googleapis.com/css?family=Shantell Sans' rel='stylesheet'>
 <script src="https://kit.fontawesome.com/3e84a5c669.js" crossorigin="anonymous"></script>
 <style>
@@ -8,18 +8,20 @@
 body {
     background-image: url(hopeneverdies.gif);
     background-size: cover;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100%;
+    background-position: center;
+    height: 48em;
     font-family: "Shantell Sans";
+    margin-left: 2em;
 }
-.section1 {
-    font-size: 18px;
+.section1 { 
     margin: 4;
-    max-width: 30%;
+    max-width: 24em;
     padding: 0 4em;
     background: transparent;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(.3em);
     border: 2px solid;
     border-radius: 1.4rem;
     line-height: 2em;
@@ -29,17 +31,17 @@ body {
     list-style: none;
     grid-auto-flow: column;
     grid-gap: 1em;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     transition: color 256ms;
     text-align: center;
 }
 .section2 {
-    font-size: 18px;
-    margin: 8;
-    max-width: 30%;
+    margin: 4;
+    max-width: 24em;
     padding: 0 4em;
     background: transparent;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(.3em);
     border: 2px solid;
     border-radius: 1.4rem;
     line-height: 2em;
@@ -49,20 +51,58 @@ body {
     list-style: none;
     grid-auto-flow: column;
     grid-gap: 1em;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     transition: color 256ms;
     text-align: center;
 }
 .section3 {
-    font-size: 18px;
     margin: 4;
-    max-width: 30%;
+    max-width: 24em;
     padding: 0 4em;
     background: transparent;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(.3em);
     border: 2px solid;
     border-radius: 1.4rem;
-    line-height: 2em;
+    line-height: 2.4em;
+    font-weight: bold;
+    white-space: nowrap;
+    grid-auto-flow: column;
+    grid-gap: 1em;
+    margin-bottom: 5px;
+    transition: color 256ms;
+    text-align: center;
+    justify-content: center;
+}
+.section4 {
+    margin: 4;
+    max-width: 24em;
+    padding: 0 4em;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(.3em);
+    border: 2px solid;
+    border-radius: 1.4rem;
+    line-height: 2.4em;
+    font-weight: bold;
+    white-space: nowrap;
+    grid-auto-flow: column;
+    grid-gap: 1em;
+    margin-bottom: 5px;
+    transition: color 256ms;
+    text-align: center;
+    justify-content: center;
+}
+.section5 {
+    margin: 4;
+    max-width: 24em;
+    padding: 0 4em;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(.3em);
+    border: 2px solid;
+    border-radius: 1.4rem;
+    line-height: 2.4em;
     font-weight: bold;
     white-space: nowrap;
     grid-auto-flow: column;
@@ -71,14 +111,33 @@ body {
     transition: color 256ms;
     text-align: center;
     justify-content: center;
+    transition: color 256ms;
+}
+.item-link {
+    color: transparent;
+    text-decoration: none;
+    transition: color 256ms;
+}
+.item-link:hover {
+    color: rgb(237, 218, 11);
+    text-decoration: dotted;
 }
 h1 {
+    font-size: 1.9em;
     color: transparent;
     animation: rainbow_animation 8s ease infinite;
-    background: linear-gradient(to right, #ccdeff, #ccdeff, #ccdeff, #ccdeff, #ccdeff, #f4ffc3, #fffc5c , #f8ff9b, #ccdeff, #ccdeff);
+    background: linear-gradient(to right, #adcaff, #ccdeff, #ccdeff, #ccdeff, #b6d0ff, #f4ffc3, #fffd7b , #f8ff9b, #ffafa5, #ccdeff);
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 400% 100%;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+p {
+    font-size: 1em;
+    color: azure;
+    margin-bottom: 4px;
+    line-height: 19px;
 }
 @keyframes rainbow_animation{
     0%,100% {
@@ -93,33 +152,46 @@ h1 {
 <body>
     <section class="section1">
 <h1>
-    Email <i class="fa-regular fa-envelope"></i>
+    About <i class="fa-solid fa-address-card"></i>
 </h1>
 <p>
-    Email me about beats, collabs, & coding
-</p>
-<p>
-    juhztn@gmail.com
+    at 15(2016) I began my music journey on fl studio 
+<p>from my love of rap instrumentals; through my teens 
+<p> I began to learn the guitar, piano, drums, singing,
+<p> recording, mixing, mastering... 
+<p> now at 24 I'm working with other artists to 
+<p> produce inspiring, thought provoking music for all
+<p>- Justin
 </p>
 </section>
 <section class="section2">
     <h1> 
-        Discord <i class="fa-brands fa-discord"></i>
+        Contact <i class="fa-solid fa-envelope"></i>
     </h1>
     <p>
-        juuustin#0419
+        justin@sellwhite.co
     </p>
 </section>
 <section class="section3">
     <h1> 
-        random socials
+        Support directly <i class="fa-solid fa-gift"></i>
     </h1>
     <p>
-        xXyungosugod420Xx <i class="fa-brands fa-steam"></i>
-</p>
+        your support ensures frequent and quality music! 
+    <p> streaming services don't pay very much alone
     <p>
-        juhzten (chess.com i will smoke u)
+        it also means a lot <i class="fa-solid fa-heart"></i>
     </p>
+</section>
+<section class="section4">
+    <h1>
+        <a class="item-link" href="https://open.spotify.com/album/3CII1cxf6e438sQUOl7N4u">Purchase Song Files</a>
+    </h1>
+</section>
+<section class="section5">
+    <h1>
+        <a class="item-link" href="https://open.spotify.com/album/3CII1cxf6e438sQUOl7N4u">Paypal</a>                                                                                                                                                     
+    </h1>
 </section>
 </body>
 </html>
