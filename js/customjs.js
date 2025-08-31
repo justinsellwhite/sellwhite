@@ -1,4 +1,15 @@
-function select (link) {
+//from here: https://developer.spotify.com/documentation/embeds/tutorials/using-the-iframe-api
+window.onSpotifyIframeApiReady = (IFrameAPI) => {
+    const element = document.getElementById('embed-iframe');
+    const options = {
+        uri: 'spotify:track:0vgVNkMCgIT1byA3Qf5fEg'
+        //uri: 'spotify:episode:7makk4oTQel546B0PZlDM5'
+    };
+    const callback = (EmbedController) => { };
+    IFrameAPI.createController(element, options, callback);
+};
+
+function select(link) {
     const item = link.parentNode
     const nav = item.parentNode
     const index = Array.prototype.indexOf.call(nav.children, item)
@@ -25,7 +36,6 @@ function randomSite() {
     var i = parseInt(Math.random() * sites.length);
     location.href = sites[i];
 }
-
 
 function randomlinks() {
     var myrandom=Math.round(Math.random()*63)
