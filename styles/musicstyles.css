@@ -1,0 +1,104 @@
+body {
+    background-image: url(../assets/itachi.gif);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+/*    height: 100%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);*/
+    font-family: "Shantell Sans";
+}
+
+/*.section1 {
+    margin: 8;
+    max-width: 100%;
+    padding: 0 4em;
+    font-size: 18px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid;
+    border-radius: 1.4rem;
+    line-height: 2em;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: auto;
+    list-style: none;
+    grid-auto-flow: column;
+    grid-gap: 1em;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: color 256ms;
+}
+
+    .section1:hover {
+        color: rgb(185, 0, 0);
+    }*/
+
+/*
+picture {
+    margin: 10px;
+    max-width: 10px;
+    max-height: 10px;
+    position: absolute;
+    top: -5%;
+    left: 180%;
+    margin-right: -10%;
+    transform: translate(-50%, -50%);
+}*/
+
+/*h2 {
+    position: absolute;
+    top: 65%;
+    left: 252%;
+    margin-right: -10%;
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+}
+
+div {
+    margin: 100px;
+    max-width: 10000px;
+    max-height: 100px;
+    position: relative;
+    top: 40%;
+    left: 190%;
+    margin-right: -10%;
+    transform: translate(-50%, -50%);
+}*/
+
+.card {
+    font-size: 18px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid;
+    border-radius: 1.4rem;
+    line-height: 2em;
+    font-weight: bold;
+    transition: color 256ms;
+}
+
+    .card:hover {
+        color: rgb(185, 0, 0);
+    }
+
+.icon-spacer-right {
+    margin-right: 0.5rem;
+}
+
+.item-link {
+    color: #e2e2e2;
+    text-decoration: none;
+    transition: color 256ms;
+}
+
+    .item-link:hover {
+        color: rgb(184, 70, 70);
+        text-decoration: dotted;
+    }
+
+/*a {
+    text-decoration: none;
+}

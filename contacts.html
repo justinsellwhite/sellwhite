@@ -1,197 +1,123 @@
 <!DOCTYPE html>
-<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    <title>Contact</title>
+    <link href='https://fonts.googleapis.com/css?family=Shantell Sans' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3e84a5c669.js" crossorigin="anonymous"></script>
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <link href="./styles/contactsstyles.css" rel="stylesheet">
+</head>
+<html class="h-100">
+<body class="h-100 w-100">
+    <!--TODO:: figure out how to do transition stuff with the contact buttons-->
+    <!--<style>
+        .item-link {
+            color: transparent;
+            text-decoration: none;
+            transition: color 256ms;
+        }
 
-<link href='https://fonts.googleapis.com/css?family=Shantell Sans' rel='stylesheet'>
-<script src="https://kit.fontawesome.com/3e84a5c669.js" crossorigin="anonymous"></script>
-<style>
+            .item-link:hover {
+                color: rgb(237, 218, 11);
+                text-decoration: dotted;
+            }
+    </style>-->
 
-body {
-    background-image: url(hopeneverdies.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: 48em;
-    font-family: "Shantell Sans";
-    margin-left: 2em;
-}
-.section1 { 
-    margin: 4;
-    max-width: 24em;
-    padding: 0 4em;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(.3em);
-    border: 2px solid;
-    border-radius: 1.4rem;
-    line-height: 2em;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: auto;
-    list-style: none;
-    grid-auto-flow: column;
-    grid-gap: 1em;
-    margin-bottom: 10px;
-    transition: color 256ms;
-    text-align: center;
-}
-.section2 {
-    margin: 4;
-    max-width: 24em;
-    padding: 0 4em;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(.3em);
-    border: 2px solid;
-    border-radius: 1.4rem;
-    line-height: 2em;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: auto;
-    list-style: none;
-    grid-auto-flow: column;
-    grid-gap: 1em;
-    margin-bottom: 10px;
-    transition: color 256ms;
-    text-align: center;
-}
-.section3 {
-    margin: 4;
-    max-width: 24em;
-    padding: 0 4em;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(.3em);
-    border: 2px solid;
-    border-radius: 1.4rem;
-    line-height: 2.4em;
-    font-weight: bold;
-    white-space: nowrap;
-    grid-auto-flow: column;
-    grid-gap: 1em;
-    margin-bottom: 5px;
-    transition: color 256ms;
-    text-align: center;
-    justify-content: center;
-}
-.section4 {
-    margin: 4;
-    max-width: 24em;
-    padding: 0 4em;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(.3em);
-    border: 2px solid;
-    border-radius: 1.4rem;
-    line-height: 2.4em;
-    font-weight: bold;
-    white-space: nowrap;
-    grid-auto-flow: column;
-    grid-gap: 1em;
-    margin-bottom: 5px;
-    transition: color 256ms;
-    text-align: center;
-    justify-content: center;
-}
-.section5 {
-    margin: 4;
-    max-width: 24em;
-    padding: 0 4em;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(.3em);
-    border: 2px solid;
-    border-radius: 1.4rem;
-    line-height: 2.4em;
-    font-weight: bold;
-    white-space: nowrap;
-    grid-auto-flow: column;
-    grid-gap: 1em;
-    margin-bottom: 10px;
-    transition: color 256ms;
-    text-align: center;
-    justify-content: center;
-    transition: color 256ms;
-}
-.item-link {
-    color: transparent;
-    text-decoration: none;
-    transition: color 256ms;
-}
-.item-link:hover {
-    color: rgb(237, 218, 11);
-    text-decoration: dotted;
-}
-h1 {
-    font-size: 1.9em;
-    color: transparent;
-    animation: rainbow_animation 8s ease infinite;
-    background: linear-gradient(to right, #adcaff, #ccdeff, #ccdeff, #ccdeff, #b6d0ff, #f4ffc3, #fffd7b , #f8ff9b, #ffafa5, #ccdeff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-size: 400% 100%;
-    margin-bottom: 2px;
-    margin-top: 2px;
-}
-p {
-    font-size: 1em;
-    color: azure;
-    margin-bottom: 4px;
-    line-height: 19px;
-}
-@keyframes rainbow_animation{
-    0%,100% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 100% 0;
-    }
-}
-</style>
+    <div class="container d-flex flex-column h-100 w-100 justify-content-center align-items-center">
+        <div class="row w-100 mb-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-center">
+                        About
+                        <div class="icon-container icon-spacer-left">
+                            <i class="fa-solid fa-address-card" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <p>
+                            at 15(2016) I began my music journey on fl studio
+                        </p><p>
+                            from my love of rap instrumentals; through my teens
+                        </p><p>
+                            I began to learn the guitar, piano, drums, singing,
+                        </p><p>
+                            recording, mixing, mastering...
+                        </p><p>
+                            now at 24 I'm working with other artists to
+                        </p><p>
+                            produce inspiring, thought provoking music for all
+                        </p><p>
+                            - Justin
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 mb-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-center">
+                        Contact
+                        <div class="icon-container icon-spacer-left">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-center">
+                        <a href="mailto:justin@sellwhite.co">justin@sellwhite.co</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 mb-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-center">
+                        Support directly
+                        <div class="icon-container icon-spacer-left">
+                            <i class="fa-solid fa-gift" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <p>
+                            your support ensures frequent and quality music!
+                        </p>
+                        <p>
+                            streaming services don't pay very much alone
+                        </p><p>
+                            it also means a lot <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<body>
-    <section class="section1">
-<h1>
-    About <i class="fa-solid fa-address-card"></i>
-</h1>
-<p>
-    at 15(2016) I began my music journey on fl studio 
-<p>from my love of rap instrumentals; through my teens 
-<p> I began to learn the guitar, piano, drums, singing,
-<p> recording, mixing, mastering... 
-<p> now at 24 I'm working with other artists to 
-<p> produce inspiring, thought provoking music for all
-<p>- Justin
-</p>
-</section>
-<section class="section2">
-    <h1> 
-        Contact <i class="fa-solid fa-envelope"></i>
-    </h1>
-    <p>
-        justin@sellwhite.co
-    </p>
-</section>
-<section class="section3">
-    <h1> 
-        Support directly <i class="fa-solid fa-gift"></i>
-    </h1>
-    <p>
-        your support ensures frequent and quality music! 
-    <p> streaming services don't pay very much alone
-    <p>
-        it also means a lot <i class="fa-solid fa-heart"></i>
-    </p>
-</section>
-<section class="section4">
-    <h1>
-        <a class="item-link" href="https://open.spotify.com/album/3CII1cxf6e438sQUOl7N4u">Purchase Song Files</a>
-    </h1>
-</section>
-<section class="section5">
-    <h1>
-        <a class="item-link" href="https://open.spotify.com/album/3CII1cxf6e438sQUOl7N4u">Paypal</a>                                                                                                                                                     
-    </h1>
-</section>
+        <div class="row w-100 mb-3">
+            <div class="col">
+                <div class="card">
+                    <!--<div class="card-header d-flex justify-content-center">
+                        Random Socials
+                    </div>-->
+                    <div class="card-body d-flex justify-content-center">
+                        <a class="item-link" href="https://open.spotify.com/album/3CII1cxf6e438sQUOl7N4u">Purchase Song Files</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row w-100 mb-3">
+            <div class="col">
+                <div class="card">
+                    <!--<div class="card-header d-flex justify-content-center">
+                        Random Socials
+                    </div>-->
+                    <div class="card-body d-flex justify-content-center">
+                        <a class="item-link" href="https://open.spotify.com/album/3CII1cxf6e438sQUOl7N4u">Paypal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
