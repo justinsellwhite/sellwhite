@@ -29,6 +29,7 @@
             grid-gap: 1em;*/
     transition: color 256ms;
     animation: rainbow_animation 12s ease infinite;
+    /*background-size: 390% 100%;*/
     /*        -webkit-background-clip: border;
             background-clip: border;*/
     /*        background-size: 390% 100%;*/
@@ -55,7 +56,7 @@
         background: linear-gradient(to right, #72ffad, #0099ff, #00ff00, #ff3399, #6666ff, #72ffad, #0099ff, #00ff00, #ff3399, #6666ff);
         -webkit-background-clip: text;
         background-clip: text;
-        /*            background-size: 400% 100%;*/
+        background-size: 400% 100%;
     }
 
 

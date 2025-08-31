@@ -10,6 +10,25 @@
     <script src="https://kit.fontawesome.com/3e84a5c669.js" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <style>
+        .heading {
+            background: linear-gradient(to right, #72ffad, #0099ff, #00ff00, #ff3399, #6666ff, #72ffad, #0099ff, #00ff00, #ff3399, #6666ff);
+            /*            justify-content: center;
+            align-items: center;*/
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow_animation 8s ease infinite;
+            background-size: 400% 100%;
+            /*            background-size: 400% 100%;
+            padding: 0 2em;
+            margin: 3;
+            border: 2px solid;*/
+            font-size: 50px
+        }
+    </style>
+
 </head>
 <html class="h-100">
 <body class="h-100 w-100">
@@ -30,36 +49,48 @@
     </nav>-->
 
     <div class="container h-100">
-        <div class="row h-100 justify-content-center align-items-center" style="margin: 8px;">
-            <div class="navitems">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 text-center">
-                        <span class="navitem w-100">
-                            <a class="item-link" onclick="select(this)" href="https://www.instagram.com/justinsellwhite/">
-                                <i class="fa-brands fa-instagram" style="margin-right: 8px;"></i>Instagram
-                            </a>
-                        </span>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 text-center">
-                        <span class="navitem w-100">
-                            <a class="item-link" onclick="select(this)" href="music.html">
-                                <i class="fa-solid fa-music" style="margin-right: 8px;"></i>Music
-                            </a>
-                        </span>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 text-center">
-                        <span class="navitem w-100">
-                            <a class="item-link" onclick="randomlinks();" href="#">
-                                <i class="fa-solid fa-dice" style="margin-right: 8px;"></i>Away
-                            </a>
-                        </span>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 text-center">
-                        <span class="navitem w-100">
-                            <a class="item-link" onclick="select(this)" href="contacts.html">
-                                <i class="fa-solid fa-address-book" style="margin-right: 8px;"></i>About/Support
-                            </a>
-                        </span>
+        <div class="d-flex w-100 h-100 align-items-center justify-content-center flex-column">
+            <div class="row justify-content-center align-items-center">
+                <h1 class="heading">
+                    sellwhite.co
+                </h1>                
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <h2 class="footnote">
+                    coded by justin and jaret
+                </h2>
+            </div>
+            <div class="row w-100 justify-content-center align-items-center" style="margin: 8px;">
+                <div class="navitems">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 text-center">
+                            <span class="navitem w-100">
+                                <a class="item-link" onclick="select(this)" href="https://www.instagram.com/justinsellwhite/">
+                                    <i class="fa-brands fa-instagram" style="margin-right: 8px;"></i>Instagram
+                                </a>
+                            </span>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 text-center">
+                            <span class="navitem w-100">
+                                <a class="item-link" onclick="select(this)" href="music.html">
+                                    <i class="fa-solid fa-music" style="margin-right: 8px;"></i>Music
+                                </a>
+                            </span>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 text-center">
+                            <span class="navitem w-100">
+                                <a class="item-link" onclick="randomlinks();" href="#">
+                                    <i class="fa-solid fa-dice" style="margin-right: 8px;"></i>Away
+                                </a>
+                            </span>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 text-center">
+                            <span class="navitem w-100">
+                                <a class="item-link" onclick="select(this)" href="contacts.html">
+                                    <i class="fa-solid fa-address-book" style="margin-right: 8px;"></i>About/Support
+                                </a>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
